@@ -1,0 +1,9 @@
+C:\Users\it1\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\bin\Release\MyCommon.dll
+C:\Users\it1\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\bin\Release\MyCommon.pdb
+C:\Users\it1\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\obj\Release\MyCommon.csprojResolveAssemblyReference.cache
+C:\Users\it1\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\obj\Release\MyCommon.dll
+C:\Users\it1\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\obj\Release\MyCommon.pdb
+C:\Users\Rahmani\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\bin\Release\MyCommon.dll
+C:\Users\Rahmani\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\bin\Release\MyCommon.pdb
+C:\Users\Rahmani\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\obj\Release\MyCommon.dll
+C:\Users\Rahmani\Documents\Visual Studio 2013\Projects\Jarvis\MyCommon\obj\Release\MyCommon.pdb

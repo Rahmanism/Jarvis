@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Jarvis.exe" version="1.7.0.2" publicKeyToken="461f25814818814e" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="heart_monitor.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Jarvis" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Jarvis.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Jarvis.exe" size="133584">
+      <assemblyIdentity name="Jarvis" version="1.7.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vj/qjFh1BRTTKJsuguOOhNB1ZZUeGIHXBbPHdeu9wzE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MyCommon.dll" size="7168">
+      <assemblyIdentity name="MyCommon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jSqOQu3th1P1O0xbaUmHF961mvsaVMF1wAoIjJBk3r4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="513536">
+      <assemblyIdentity name="Newtonsoft.Json" version="6.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Um9pFC7cgMsfJhrNt8c849uEHSGsJr7mcV9gTIoji+E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="heart_monitor.ico" size="105292">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4yVE1MNdDU0wfyuqbTa5LH+6YQMBtcMWUUKNLW368Rs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Jarvis.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ReleaseNotes.txt" size="2320">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8chVY1MhPtaqDY67Z19sozIwfrPJMj91VTLNYJf1Gck=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Mostafa-PC\Mostafa" issuerKeyHash="9d918b2ecc6367abae1d747946660dbf436e6156" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1WslWiRp4HxRHhdoMlzuzCa1zoofwzHbi4zXL7o/VEQ=</DigestValue></Reference></SignedInfo><SignatureValue>hwHzvUfyunQTF+yTKK9CznpKGG64OWQ40fKucVb1HggxbqKoPbf9/fNobEw9H0wuV+KjEnPl0ODqQPFCLmGjjms05UsjaLEvPx9w+kkQwbqxoxZP7t8PPyAJffVVWo8kLAksQy/xipfplqTVrktQXFe+8MCDCKBTm/d8GGXajjI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>v8MMTyoJWwiMKBpl9KQeQF0PFYUelq5vw1KK8owdnA5Ot477hiimmdpgg5yfuAQIqhwZPGpDaOzKN3+R+OrmvmhwoH3ereHmQwtLdhfxynwA6j3ReY1N2tchjb3BGKu3rKycvqUbWUC+qbkcNqZlnD8wPyfiGIADj/p6584mw20=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="44543fba2fd78c8bdb31c31f8aceb526ccee5c3268171e517ce069245a256bd5" Description="" Url=""><as:assemblyIdentity name="Jarvis.exe" version="1.7.0.2" publicKeyToken="461f25814818814e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Mostafa-PC\Mostafa</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4ifLwjIfsgyJqlDlAoNXPWmhOFocT3Rr41NYemiarP8=</DigestValue></Reference></SignedInfo><SignatureValue>FRKVxqXHX6WuNpWRaixtKaTHeoM2U5AkUOrvjkcGCoCNfbJ7ALF0NzdbJMYlEEUz/N4CCsDKyZ2uWxdCZOCdOkXhv/RrmlZrCCr2GZQjpT1kA6ZvYRt/ir4cwrfCD3y+dlnGN6rZqlhZYYRn/+r3CdnDJCNpnLS4d1Zjr5RA0y0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>v8MMTyoJWwiMKBpl9KQeQF0PFYUelq5vw1KK8owdnA5Ot477hiimmdpgg5yfuAQIqhwZPGpDaOzKN3+R+OrmvmhwoH3ereHmQwtLdhfxynwA6j3ReY1N2tchjb3BGKu3rKycvqUbWUC+qbkcNqZlnD8wPyfiGIADj/p6584mw20=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQFrElCjZN4pRChS1wOasRzDANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQATQBvAHMAdABhAGYAYQAtAFAAQwBcAE0AbwBzAHQAYQBmAGEwHhcNMTUwMzE0MTgzMjIwWhcNMTYwMzE0MDAzMjIwWjAvMS0wKwYDVQQDHiQATQBvAHMAdABhAGYAYQAtAFAAQwBcAE0AbwBzAHQAYQBmAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL/DDE8qCVsIjCgaZfSkHkBdDxWFHpaub8NSivKMHZwOTreO+4YoppnaYIOcn7gECKocGTxqQ2jsyjd/kfjq5r5ocKB93q3h5kMLS3YX8cp8AOo90XmNTdrXIY29wRirt6ysnL6lG1lAvqm5HDamZZw/MD8n4hiAA4/6eufOJsNtAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAFxAcPkU07D3Mt9TzurkX81vnxYgayZclZx0yG/E04K6q6vHLpEQMGgHr8l1ro+PWkBmnJKIG7EfZKw8w9/pwXodPa7AfcuUeF7K6+eSy8rCB8oHV5yVuvx1ot2hHe9WWZxKG/Vwo/Xv9jhEudV4CfeISsx2H5u6jluCOu+6lYYY=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

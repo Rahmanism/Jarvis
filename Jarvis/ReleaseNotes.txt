@@ -1,0 +1,49 @@
+﻿Version: 1.7 - 1394/01/04 04:50
+Added:
+    Saving configuration for mute alerts, both memory and CPU
+
+Fixed:
+    WorkingDirectory added in creating shortcut, so in startup it has no problem to find config file.
+
+In Code:
+    Common class has been moved to a new project called MyCommon and it's dll now used in Jarvis.
+    JsonFile class added for working with json data in file. (It should be moved to another project possibly MyCommon).
+    Configuration class added to specify configuration items and load and save them into file using JsonFile class.
+    In initialization of PerformanceMonitorExec, configuration be loaded and corresponding menus states change.
+    In dispose of PerformanceMonitorExec the configurations get updated and they'll be saved in json config file.
+
+=============================================================
+Version: 1.6 - 1393/12/26 10:00
+
+Added:
+    A menu item to run Task Manager
+    Startup shortcut (with a menu item to create it)
+    At initialization checks if there is shortcut app in startup folder then sets the check mark of startup menu item
+
+In Code:
+    A static Common class added with some common methods suitable for many apps
+    SetStartup method in Common for add/remove app to startup in windows registry
+    CreateShortcut method in Common to create shortcut of given app to the given directory (or the Desktop by default)
+    CreateShortcut overload method in Common to create of current app shortcut to Desktop
+    PutInStartupFolder method in Common to create shortcut of an app (current app by default) in startup folder
+
+=============================================================
+Version: 1.5 - 1393/12/23 23:11
+
+Added:
+    Mute messages, just voice or fully muted.
+    Muting menus categorized for memory and CPU.
+    Clicking on program name menu item, reads the welcome message, something like about message.
+    Clicking on system up time menu item, speaks system up time.
+
+Fixed:
+    Disposing instances.
+
+In Code:
+    Messages changed to global.
+    An enum added (Mute) to use for mute states.
+    Global methods created for memory and cpu (separately) to read global messages.
+    Because of new mute states, config menus changed to radio.
+    A method for changing radio check of menus added.
+    Dispose methods has been modified and optimized.
+    Version and description source now is the assembly info.
